@@ -1,23 +1,32 @@
 * {
     box-sizing: border-box;
+    /*sets the box sizing to border-box*/
     padding: 0;
+    /*sets the padding to 0 pixels*/
     margin: 0;
+    /*sets the margin to 0 pixels*/
 }
 
 body {
     background-color: #d9dcd6;
+    /*sets the background color of the body to #d9cd6*/
 }
 
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /*sets font family of the header class to Trebuchet MS, if available. If not, it goes down the list in subsequential order*/
     background-color: #2a607c;
+        /*sets the background color  of the header class to #2a607c*/
     color: #ffffff;
+        /*sets the color of the header class text to white*/
 }
 
 .header h1 {
     display: inline-block;
+        /*sets the header h1 class to be displayed inline-block*/
     font-size: 48px;
+        /*sets the font size of header h1 class to 48 pixels*/
 }
 
 .header h1 .seo {
@@ -28,32 +37,40 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
+        /*sets the header div class to float on the right side of the page*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+
 }
 
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
+        /*sets the left margin for the header div ul li class to 25 pixels*/
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
+        /*sets the text decoartion to zero*/
 }
 
 p {
     font-size: 16px;
 }
 
-/*team image*/
 .hero {
     height: 800px;
+        /*sets the height of the main image to 800 pixels*/
     width: 100%;
+        /*sets the width of the main image to 100%*/
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
+        /*sets the URL for the background image*/
     background-size: cover;
+        /*sets backfround size to cover*/
     background-position: center;
+        /*sets background position to center*/
 }
 
 .float-left {
@@ -97,6 +114,7 @@ p {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+        /*sets the max-width of all three imahges */
 }
 
 .search-engine-optimization,.online-reputation-management,.social-media-marketing {

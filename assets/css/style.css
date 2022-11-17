@@ -24,49 +24,27 @@ body {
     color: #d9dcd6;
 }
 
-.header div ul li, a{
-    position: relative;
-    bottom: 34px;
+.header div {
     padding-top: 15px;
-    margin-left: 25px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    display: inline-block;
-    color: #ffffff;
-    text-decoration: none;
 }
-
-/* removed code: is wasnt't contributing anything to the code.
+/* the following code provided nothing to the css sheet
 .header div ul {
     list-style-type: none;
-} 
-*/
-
-/*merged attributes into ".header div ul li, a"
-.header div ul li  {
-    display: inline-block;
-    margin-left: 25px;
-    color: #ffffff;
-    text-decoration: none;
-
 }
 */
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
 
-/* the following code (a & .a) is not needed anymore since it was grouped above with ".header div ul li" above.
 a {
     color: #ffffff;
     text-decoration: none;
-
-.a {
-    display: inline-block;
-    margin-left: 25px;
-    color: #ffffff;
-    text-decoration: none;
-
 }
-*/
 
 /*font size for each paragraph was grouped with the content selector below
 p {

@@ -1,32 +1,23 @@
 * {
     box-sizing: border-box;
-    /*sets the box sizing to border-box*/
     padding: 0;
-    /*sets the padding to 0 pixels*/
     margin: 0;
-    /*sets the margin to 0 pixels*/
 }
 
 body {
     background-color: #d9dcd6;
-    /*sets the background color of the body to #d9cd6*/
 }
 
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        /*sets font family of the header class to Trebuchet MS, if available. If not, it goes down the list in subsequential order*/
     background-color: #2a607c;
-        /*sets the background color  of the header class to #2a607c*/
     color: #ffffff;
-        /*sets the color of the header class text to white*/
 }
 
 .header h1 {
     display: inline-block;
-        /*sets the header h1 class to be displayed inline-block*/
     font-size: 48px;
-        /*sets the font size of header h1 class to 48 pixels*/
 }
 
 .header h1 .seo {
@@ -37,22 +28,23 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-        /*sets the header div class to float on the right side of the page*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-
 }
+
+/* removed code because of redundency
+.header div ul {
+    list-style-type: none;
+} */
 
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
-        /*sets the left margin for the header div ul li class to 25 pixels*/
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
-        /*sets the text decoartion to zero*/
 }
 
 p {
@@ -61,16 +53,11 @@ p {
 
 .hero {
     height: 800px;
-        /*sets the height of the main image to 800 pixels*/
     width: 100%;
-        /*sets the width of the main image to 100%*/
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
-        /*sets the URL for the background image*/
     background-size: cover;
-        /*sets backfround size to cover*/
     background-position: center;
-        /*sets background position to center*/
 }
 
 .float-left {
@@ -100,24 +87,76 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead,.benefit-brand,.benefit-cost {
+/*changed class within benefits class to "benefit" to clean up css code.*/
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-lead h3,.benefit-brand h3,.benefit-cost h3 {
+/* removed following code because it was simplified into one class.
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+} */
+
+/*changed folling class to just benefit h3 to simplify code*/
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-lead img,.benefit-brand img,.benefit-cost img {
+/*removed following code because is was simplified
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+} */
+
+/*change class to benefit to simplify*/
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-        /*sets the max-width of all three imahges */
 }
 
-.search-engine-optimization,.online-reputation-management,.social-media-marketing {
+/*
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+} */
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.topic {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/*changed the class in html to reflect the selector above to condense all the code blocked out below.
+.search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -126,14 +165,60 @@ p {
     color: #ffffff;
 }
 
-.search-engine-optimization img,.online-reputation-management img,.social-media-marketing img {
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+} */
+
+.topic img {
     max-height: 200px;
 }
 
-.search-engine-optimization h2,.online-reputation-management h2,.social-media-marketing h2 {
+/*changed the class in html to reflect the selector above to condense all the code blocked out below.
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}*/
+
+.topic h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+/*changed the class in html to reflect the selector above to condense all the code blocked out below.
+.search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}*/
 
 .footer {
     padding: 30px;
